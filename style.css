@@ -1,0 +1,214 @@
+/* animations */
+@keyframes flyFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes flyFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes flyFromTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes flyFromDown {
+    0% {
+        opacity: 0;
+        transform: translateY(+100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.flyFromRightClass {
+    animation: flyFromRight 2s forwards;
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+.flyFromLeftClass {
+    animation: flyFromLeft 2s forwards;
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.flyFromTopClass {
+    animation: flyFromTop 2s forwards;
+    opacity: 0;
+    transform: translateY(-100%);
+}
+
+.flyFromDownClass {
+    animation: flyFromDown 2s forwards;
+    opacity: 0;
+    transform: translateY(100%);
+}
+
+/*opcenito*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+header {
+    background-color: white;
+    width: 100%;
+    border-bottom: 1px solid white;
+}
+
+header>ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    margin-bottom: 0px;
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+header>ul li {
+    margin: 15px 5px;
+    padding: 5px;
+    width: max-content;
+    transition: font-size 1 ease-in-out;
+}
+
+header>ul li:hover a {
+    font-size: 1.3rem;
+}
+
+@media (max-width: 600px) {
+    header>ul a {
+        font-size: 0.8rem;
+    }
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.homeLink {
+    background-color: orange;
+    border-radius: 7px;
+    width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0xp 2px;
+}
+
+.homeLink a {
+    color: black;
+}
+
+/*Hero*/
+#hero {
+    width: 100vw;
+    background-color: black;
+    border-bottom: 1px solid white;
+}
+
+.nameH1 {
+    color: white;
+}
+
+/*skills*/
+.skills {
+    border-bottom: 1px solid black;
+}
+
+/*about*/
+#about {
+    background-color: black;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutMeInfo {
+    width: 40%;
+    margin: 0 2rem;
+}
+
+.aboutMeInfo h1{
+    text-align: center;
+}
+
+.aboutMeInfo p {
+    color: white;
+    font-size: 1rem;
+    float: left;
+}
+
+@media (max-width: 600px) {
+
+    #about{
+        flex-direction: column;
+    }
+
+    .aboutMeInfo{
+        width: 80%;
+    }
+
+    .aboutMeInfo h1{
+        text-align: center;
+    }
+
+    .aboutMeInfo p {
+        color: white;
+        font-size: 0.7rem;
+    }
+}
+
+/*contact*/
+#contact a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/**/
+#contact h1{
+    font-size: 5rem;
+}
+
+@media (max-width: 600px){
+
+}
