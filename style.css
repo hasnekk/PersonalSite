@@ -225,6 +225,15 @@ header a {
 @media (max-width: 600px) {
 
 
+    .carousel-caption h5 {
+        font-size: 0.9rem;
+    }
+
+    .carousel-caption p{
+        font-size: 0.7rem;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
 
     .aboutMeInfo {
         width: 80%;
