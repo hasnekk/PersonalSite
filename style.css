@@ -119,7 +119,6 @@ header>ul {
 
     width: 100%;
 
-    margin-bottom: 0px;
     list-style: none;
 
     margin: 0;
@@ -127,7 +126,7 @@ header>ul {
 }
 
 header>ul li {
-    margin: 15px 5px;
+    margin: 15px 0px;
     padding: 5px;
     width: max-content;
     transition: font-size 1 ease-in-out;
@@ -211,14 +210,6 @@ header a {
     color: black;
     font-size: 1rem;
     float: left;
-}
-
-.forAnimationSelector{
-    transition: all 500ms ease-in-out;
-}
-
-.forAnimationSelector:hover{
-    transform: scale(0.9);
 }
 
 @media (max-width: 1000px) {
