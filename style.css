@@ -73,8 +73,6 @@ html {
 
 .flyFromRightClass {
     animation: flyFromRight 2s forwards;
-    opacity: 0;
-    transform: translateX(100%);
 }
 
 .flyFromLeftClass {
