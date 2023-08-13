@@ -1,18 +1,23 @@
 let mySkills = document.querySelectorAll('.forAnimationSelector');
 
 let skillsObserver = new IntersectionObserver(
-    (entries) => {
+    (entries, skillsObserver) => {
         entries.forEach((element) => {
             if (element.isIntersecting) {
-                element.target.classList.add('showFullClass');
+                element.target.classList.add('onEnterClass');
                 setTimeout(() => {
                     element.target.style.opacity = 1;
                 }, 990);
-            } 
+            }else{
+                element.target.classList.remove('onEnterClass');
+                setTimeout(() => {
+                    element.target.style.opacity = 0;
+                }, 1000);
+            }
         });
     },
     {
-        threshold: [1]
+        threshold: [0]
     }
 );
 

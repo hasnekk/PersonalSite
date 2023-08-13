@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 
@@ -52,16 +53,21 @@ html {
     }
 }
 
-@keyframes showFull {
+@keyframes onEnter {
     0% {
+        transform: translateX(-100%);
         opacity: 0;
-        transform: scale(0.5);
     }
 
     100% {
+        transform: translateX(0);
         opacity: 1;
-        transform: scale(1);
     }
+}
+
+
+.onEnterClass {
+    animation: onEnter 1000ms ease-in-out;
 }
 
 
@@ -93,9 +99,6 @@ html {
     opacity: 0;
 }
 
-.showFullClass {
-    animation: showFull 1000ms ease-in-out;
-}
 
 
 /*opcenito*/
@@ -164,7 +167,7 @@ header a {
 
 /*Hero*/
 #hero {
-    width: 100vw;
+    width: 100%;
     background-color: #343a40;
     border-bottom: 1px solid white;
 }
@@ -179,7 +182,7 @@ header a {
 }
 
 /*projects*/
-#projects{
+#projects {
     background-color: #343a40;
 
 }
