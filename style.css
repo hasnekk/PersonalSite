@@ -1,3 +1,8 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
 /* animations */
 @keyframes flyFromRight {
     0% {
@@ -47,6 +52,19 @@
     }
 }
 
+@keyframes showFull {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
 .flyFromRightClass {
     animation: flyFromRight 2s forwards;
     opacity: 0;
@@ -70,6 +88,15 @@
     opacity: 0;
     transform: translateY(100%);
 }
+
+.forAnimationSelector {
+    opacity: 0;
+}
+
+.showFullClass {
+    animation: showFull 1000ms ease-in-out;
+}
+
 
 /*opcenito*/
 * {
@@ -139,7 +166,7 @@ header a {
 /*Hero*/
 #hero {
     width: 100vw;
-    background-color: black;
+    background-color: #343a40;
     border-bottom: 1px solid white;
 }
 
@@ -152,9 +179,16 @@ header a {
     border-bottom: 1px solid black;
 }
 
+/*projects*/
+#projects{
+    background-color: #343a40;
+
+}
+
+
 /*about*/
 #about {
-    background-color: black;
+    background-color: white;
 
     display: flex;
     flex-direction: row;
@@ -167,34 +201,45 @@ header a {
     margin: 0 2rem;
 }
 
-.aboutMeInfo h1{
+.aboutMeInfo h1 {
     text-align: center;
+    color: black;
+    margin-bottom: 2rem;
 }
 
 .aboutMeInfo p {
-    color: white;
+    color: black;
     font-size: 1rem;
     float: left;
 }
 
-@media (max-width: 600px) {
+.forAnimationSelector{
+    transition: all 500ms ease-in-out;
+}
 
-    #about{
+.forAnimationSelector:hover{
+    transform: scale(0.9);
+}
+
+@media (max-width: 1000px) {
+
+    #about {
         flex-direction: column;
     }
 
-    .aboutMeInfo{
+
+}
+
+@media (max-width: 600px) {
+
+
+
+    .aboutMeInfo {
         width: 80%;
     }
 
-    .aboutMeInfo h1{
-        text-align: center;
-    }
 
-    .aboutMeInfo p {
-        color: white;
-        font-size: 0.7rem;
-    }
+
 }
 
 /*contact*/
@@ -205,10 +250,6 @@ header a {
 
 
 /**/
-#contact h1{
+#contact h1 {
     font-size: 5rem;
-}
-
-@media (max-width: 600px){
-
 }
