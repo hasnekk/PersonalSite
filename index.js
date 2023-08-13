@@ -8,16 +8,10 @@ let skillsObserver = new IntersectionObserver(
                 setTimeout(() => {
                     element.target.style.opacity = 1;
                 }, 990);
-            } else {
-                element.target.classList.remove('showFullClass');
-                setTimeout(() => {
-                    element.target.style.opacity = 0;
-                }, 990);
-            }
+            } 
         });
     },
     {
-        rootMargin: '20%',
         threshold: [1]
     }
 );
