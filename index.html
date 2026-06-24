@@ -1,572 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kristijan Hasnek</title>
+  <title>Kristijan Hasnek — Software Engineer</title>
+  <meta name="description"
+    content="Kristijan Hasnek — Software Engineer building modern full-stack web and mobile applications with Node.js, Vue, React and React Native.">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
-  <!--BootStrap CSS-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-
 </head>
 
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <header>
-
-    <ul>
-      <li class="homeLink"><a href="#hero">Home</a></li>
-      <li><a href="#skills">My skills</a></li>
-      <li><a href="#projects">My projects</a></li>
-      <li><a href="#about">About me</a></li>
-      <li><a href="#contact">Contact me</a></li>
-    </ul>
-
+  <header class="site-header">
+    <nav class="shell nav">
+      <a class="brand" href="#top">KH<span class="brand-dot">.</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#freelance">Freelance</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#open-source">Open source</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle color theme" title="Toggle theme">
+        <span class="theme-icon" aria-hidden="true">◐</span>
+      </button>
+    </nav>
   </header>
 
-  <section id="hero">
-    <div class="container col-xxl-8 px-4 py-5">
-      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-        <div class="col-10 col-sm-8 col-lg-6 onEnterClass">
-          <img src="./images/CV-slika.jpg" class="d-block mx-lg-auto img-fluid" alt="Main image" loading="lazy"
-            width="700" height="500">
-        </div>
-        <div class="col-lg-6">
-          <h1 class="display-5 fw-bold lh-1 mb-3 text-white flyFromDownClass">Kristijan Hasnek
-          </h1>
-          <p class="lead text-white flyFromDownClass">I am a student at the Faculty of Electrical Engineering and
-            Computing, driven by a passion for technology and a commitment to continuous learning. With a strong
-            foundation in programming, excellent communication skills, and a proactive work ethic, I embrace new
-            challenges and stay up-to-date with the latest tech advancements.</p>
-          <div class="d-grid gap-2 d-md-flex justify-content-md-start flyFromDownClass">
-            <a href="#contact" type="button" class="btn btn-primary btn-lg px-4 me-md-2 mt-3">Contact me</a>
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero shell" id="top">
+      <div class="hero-grid">
+        <div class="hero-text reveal">
+          <p class="eyebrow">Software Engineer · Zagreb, Croatia</p>
+          <h1>Kristijan Hasnek</h1>
+          <p class="lead">
+            I build modern full-stack web and mobile applications and enjoy solving
+            complex problems end to end. Strong communicator with a proactive mindset
+            and a commitment to continuous learning.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Get in touch</a>
+            <a class="btn btn-ghost" href="./pdfs/Kristijan%20Hasnek.pdf" target="_blank" rel="noopener">
+              Download CV <span class="arrow">↗</span>
+            </a>
           </div>
+          <ul class="hero-meta">
+            <li><a href="https://github.com/hasnekk" target="_blank" rel="noopener">github.com/hasnekk ↗</a></li>
+            <li><a href="mailto:kristijanhasnek3@gmail.com">kristijanhasnek3@gmail.com</a></li>
+          </ul>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="skills">
-    <!--download resume here-->
-    <div class="container px-4 py-5" id="custom-cards">
-      <h1 class="pb-2 border-bottom flyFromLeftClass text">My skills</h1>
-
-      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5 flyFromDownClass">
-        <div class="col forAnimationSelector" style="border: none;">
-          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-            style="background-image: url('unsplash-photo-1.jpg');">
-            <div
-              class="d-flex flex-column justify-content-center align-items-center h-100 p-5 pb-3 text-white text-shadow-1">
-              <h3 class="mb-5 display-10 lh-1 fw-bold">Java, Node.js</h3>
-              <ul class="d-flex list-unstyled mt-auto">
-                <li class="d-flex align-items-center me-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-star-fill" viewBox="0 0 16 16">
-                    <path
-                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                  </svg>
-                </li>
-                <li class="d-flex align-items-center me-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-star-fill" viewBox="0 0 16 16">
-                    <path
-                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                  </svg>
-                </li>
-                <li class="d-flex align-items-center me-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-star-fill" viewBox="0 0 16 16">
-                    <path
-                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                  </svg>
-                </li>
-                <li class="d-flex align-items-center me-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-star-fill" viewBox="0 0 16 16">
-                    <path
-                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                  </svg>
-                </li>
-                <li class="d-flex align-items-center me-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-star-fill" viewBox="0 0 16 16">
-                    <path
-                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                  </svg>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col forAnimationSelector">
-          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-            style="background-color: grey;">
-            <div
-              class="d-flex flex-column justify-content-center align-items-center h-100 p-5 pb-3 text-white text-shadow-1">
-              <h3 class="mb-5 display-10 lh-1 fw-bold">HTML, CSS, JS, React.js, Vue.js, Tailwind, Bootstrap</h3>
-              <ul class="d-flex list-unstyled mt-auto">
-                <li class="d-flex align-items-center me-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-star-fill" viewBox="0 0 16 16">
-                    <path
-                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                  </svg>
-                </li>
-                <li class="d-flex align-items-center me-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-star-fill" viewBox="0 0 16 16">
-                    <path
-                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                  </svg>
-                </li>
-                <li class="d-flex align-items-center me-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-star-fill" viewBox="0 0 16 16">
-                    <path
-                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                  </svg>
-                </li>
-                <li class="d-flex align-items-center me-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-star-fill" viewBox="0 0 16 16">
-                    <path
-                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                  </svg>
-                </li>
-                <li class="d-flex align-items-center me-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-star-fill" viewBox="0 0 16 16">
-                    <path
-                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                  </svg>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="col forAnimationSelector">
-          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-            style="background-color: grey;">
-            <div
-              class="d-flex flex-column justify-content-center align-items-center h-100 p-5 pb-3 text-white text-shadow-1">
-              <h3 class="mb-5 display-10 lh-1 fw-bold">PostgreSql, MongoDB, SupaBase</h3>
-              <ul class="d-flex list-unstyled mt-auto">
-                <li class="d-flex align-items-center me-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-star-fill" viewBox="0 0 16 16">
-                    <path
-                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                  </svg>
-                </li>
-                <li class="d-flex align-items-center me-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-star-fill" viewBox="0 0 16 16">
-                    <path
-                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                  </svg>
-                </li>
-                <li class="d-flex align-items-center me-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-star-fill" viewBox="0 0 16 16">
-                    <path
-                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                  </svg>
-                </li>
-                <li class="d-flex align-items-center me-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-star-fill" viewBox="0 0 16 16">
-                    <path
-                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                  </svg>
-                </li>
-                <li class="d-flex align-items-center me-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-star-fill" viewBox="0 0 16 16">
-                    <path
-                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                  </svg>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="col forAnimationSelector">
-          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-            style="background-image: url('unsplash-photo-1.jpg');">
-            <div
-              class="d-flex flex-column justify-content-center align-items-center h-100 p-5 pb-3 text-white text-shadow-1">
-              <h3 class="mb-5 display-10 lh-1 fw-bold">Communication/Team Work</h3>
-              <ul class="d-flex list-unstyled mt-auto">
-                <li class="d-flex align-items-center me-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-star-fill" viewBox="0 0 16 16">
-                    <path
-                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                  </svg>
-                </li>
-                <li class="d-flex align-items-center me-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-star-fill" viewBox="0 0 16 16">
-                    <path
-                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                  </svg>
-                </li>
-                <li class="d-flex align-items-center me-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-star-fill" viewBox="0 0 16 16">
-                    <path
-                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                  </svg>
-                </li>
-                <li class="d-flex align-items-center me-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-star-fill" viewBox="0 0 16 16">
-                    <path
-                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                  </svg>
-                </li>
-                <li class="d-flex align-items-center me-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-star-fill" viewBox="0 0 16 16">
-                    <path
-                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                  </svg>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col forAnimationSelector">
-          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-            style="background-image: url('unsplash-photo-1.jpg');">
-            <div
-              class="d-flex flex-column justify-content-center align-items-center h-100 p-5 pb-3 text-white text-shadow-1">
-              <h3 class="mb-5 display-10 lh-1 fw-bold">English, German, Croatian</h3>
-              <ul class="d-flex list-unstyled mt-auto">
-                <li class="d-flex align-items-center me-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-star-fill" viewBox="0 0 16 16">
-                    <path
-                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                  </svg>
-                </li>
-                <li class="d-flex align-items-center me-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-star-fill" viewBox="0 0 16 16">
-                    <path
-                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                  </svg>
-                </li>
-                <li class="d-flex align-items-center me-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-star-fill" viewBox="0 0 16 16">
-                    <path
-                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                  </svg>
-                </li>
-                <li class="d-flex align-items-center me-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-star-fill" viewBox="0 0 16 16">
-                    <path
-                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                  </svg>
-                </li>
-                <li class="d-flex align-items-center me-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-star-fill" viewBox="0 0 16 16">
-                    <path
-                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                  </svg>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="container text-center my-3 p-3 ">
-        <div class="d-flex gap-2 justify-content-center py-5">
-          <a href="./pdfs/Kristijan Hasnek.pdf" download class="flyFromDownClass">
-            <button class="btn btn-primary d-inline-flex align-items-center" type="button">
-              CV-Kristijan Hasnek
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi bi-arrow-right-square-fill mx-3" viewBox="0 0 16 16">
-                <path
-                  d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1z" />
-              </svg>
-            </button>
-          </a>
+        <div class="hero-portrait reveal">
+          <img src="./images/CV-slika.jpg" alt="Portrait of Kristijan Hasnek" loading="eager" width="420"
+            height="520">
         </div>
       </div>
 
-      <div class="container text-center my-3 p-3 ">
-        <div class="d-flex flex-column gap-3 justify-content-center py-5">
-
-          <h3 class="flyFromDownClass">My certificates</h3>
-
-
-          <a href="./pdfs/Vue.pdf" download class="flyFromDownClass">
-            <button class="btn btn-secondary d-inline-flex align-items-center" type="button">
-              Build Web Apps with Vue JS 3 & Firebase
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi bi-arrow-right-square-fill mx-3" viewBox="0 0 16 16">
-                <path
-                  d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1z" />
-              </svg>
-            </button>
-          </a>
-
-
-          <a href="./pdfs/Typescript.pdf" download class="flyFromDownClass">
-            <button class="btn btn-secondary d-inline-flex align-items-center" type="button">
-              Understand Typescript
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi bi-arrow-right-square-fill mx-3" viewBox="0 0 16 16">
-                <path
-                  d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1z" />
-              </svg>
-            </button>
-          </a>
-
-          <a href="./pdfs/webDevelopmentBootcamp.pdf" download class="flyFromDownClass">
-            <button class="btn btn-secondary d-inline-flex align-items-center" type="button">
-              Full Stack Web Developer
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi bi-arrow-right-square-fill mx-3" viewBox="0 0 16 16">
-                <path
-                  d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1z" />
-              </svg>
-            </button>
-          </a>
-
-          <a href="./pdfs/ultimateReactCourse.pdf" download class="flyFromDownClass">
-            <button class="btn btn-secondary d-inline-flex align-items-center" type="button">
-              React Course 2023
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi bi-arrow-right-square-fill mx-3" viewBox="0 0 16 16">
-                <path
-                  d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1z" />
-              </svg>
-            </button>
-          </a>
-
-          <a href="./pdfs/c%23.pdf" download class="flyFromDownClass">
-            <button class="btn btn-secondary d-inline-flex align-items-center" type="button">
-              C# language
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi bi-arrow-right-square-fill mx-3" viewBox="0 0 16 16">
-                <path
-                  d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1z" />
-              </svg>
-            </button>
-          </a>
-
-        </div>
+      <div class="stack reveal" aria-label="Core technologies">
+        <span class="stack-label">Stack</span>
+        <ul class="stack-list" id="stack-list"></ul>
       </div>
+    </section>
 
-
-
-  </section>
-
-  <section id="projects">
-
-    <div class="container px-4 py-5" id="custom-cards">
-      <h1 class="pb-2 border-bottom flyFromLeftClass text-center text-light">My Projects</h1>
-
-      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5 flyFromDownClass">
-
-        <div class="col forAnimationSelector">
-          <a target="_blank" href="https://hasnekk.github.io/bakeryStephanie/"
-            style="cursor: pointer; text-decoration: none; color: none;">
-            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-              style="background-image: url('./images/projectsCovers/projectBakeryStephanie.jpg'); background-repeat: no-repeat; background-size: cover;">
-              <div
-                class="d-flex flex-column justify-content-center align-items-center h-100 p-5 pb-3 text-white text-shadow-1">
-                <h3 class="mb-5 display-10 lh-1 fw-bold">Bakery Web Site</h3>
-                <p class="mb-5 display-10 lh-1 fs-3 fw-bold">Html Css Js</p>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="col forAnimationSelector">
-          <a target="_blank" href="https://scorebet-frontend.onrender.com/#/home"
-            style="cursor: pointer; text-decoration: none; color: none;">
-            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-              style="background-image: url('./images/projectsCovers/projectScoreBet.png'); background-repeat: no-repeat; background-size: cover;">
-              <div
-                class="d-flex flex-column justify-content-center align-items-center h-100 p-5 pb-3 text-white text-shadow-1">
-                <h3 class="mb-5 display-10 lh-1 fw-bold">ScoreBet</h3>
-                <p class="mb-5 display-10 lh-1 fs-3 fw-bold">Vue Node MongoDB</p>
-              </div>
-            </div>
-          </a>
-        </div>
-
+    <!-- EXPERIENCE -->
+    <section class="section shell" id="experience">
+      <div class="section-head reveal">
+        <span class="section-index">01</span>
+        <h2>Work Experience</h2>
       </div>
+      <ol class="timeline" id="experience-list"></ol>
+      <div id="featured-app"></div>
+    </section>
 
-
-  </section>
-
-  <section id="about">
-    <div class="aboutMeInfo mt-5 pt-4">
-      <h1>About me</h1>
-      <p>
-        My work engagement at Zeraxo d.o.o lasted for 2 months, during which I gained experience in the C# programming
-        language, HTML, CSS, and JavaScript technologies, as well as in working with the Umbraco CMS. Throughout that
-        period, I actively contributed to project development and successfully expanded my knowledge of these
-        technologies. Apart from my professional interests, I also have a passion for several other activities, such as
-        football and going to the gym. Exercising helps me maintain a healthy balance between body and mind.
-      </p>
-    </div>
-
-    <div class="container px-4 py-5" id="featured-3">
-      <div id="carouselExampleIndicators" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-            aria-label="Slide 4"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./images/aboutProgramming.jpg" class="d-block w-100 h-100" alt="...">
-            <div class="carousel-caption d-md-block">
-              <h5>Passionate Programmer & Tech Enthusiast</h5>
-              <p>Enthusiastic programmer 🚀, sculpting my dreams through code. Catch me in my element, transforming
-                lines into functional art. Let's innovate together!</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="./images/aboutSport.jpg" class="d-block w-100 h-100" alt="...">
-            <div class="carousel-caption d-md-block">
-              <h5>Embracing Active Adventures</h5>
-              <p>Devoted to Code ⌨️, and a die-hard Football ⚽ enthusiast. On weekends, I swap IDEs for stadiums,
-                chasing goals on and off the screen</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="./images/aboutCommunication.jpg" class="d-block w-100 h-100" alt="...">
-            <div class="carousel-caption d-md-block">
-              <h5>Mastering the Art of Communication</h5>
-              <p>🗣️ Words have the power to shape worlds, and I wield them with finesse. Adept at conveying ideas
-                eloquently and fostering meaningful connections, I'm a skilled communicator who thrives on building
-                bridges through dialogue. Let's paint the canvas of understanding together.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="./images/aboutGym.jpg" class="d-block w-100 h-100" alt="...">
-            <div class="carousel-caption d-md-block">
-              <h5>Pursuing Physical Excellence</h5>
-              <p>Embracing an active lifestyle 🏃‍♂️. When I'm not coding, you'll find me enjoying a variety of sports,
-                fueling both body and mind</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+    <!-- FREELANCE -->
+    <section class="section shell" id="freelance">
+      <div class="section-head reveal">
+        <span class="section-index">02</span>
+        <h2>Freelance</h2>
       </div>
-    </div>
-  </section>
+      <p class="section-intro reveal">Alongside full-time roles I deliver projects directly for clients —
+        from marketing sites to custom internal systems.</p>
+      <ul class="list" id="freelance-list"></ul>
+    </section>
 
-  <section id="contact" style="background-color: #343a40;">
-    <main>
-      <div class="container py-4">
-        <div class=" mb-4 bg-body-tertiary rounded-3">
-          <div class="container-fluid py-5">
-            <h1 class="display-5 fw-bold text-center w-100 h-100">Contact Me</h1>
-          </div>
-        </div>
-
-        <div class="row align-items-md-stretch">
-          <div class="col-md-6">
-            <div class="h-100 p-5 text-bg-dark rounded-3 d-flex justify-content-center align-items-center">
-              <ul class="list-unstyled h-100 d-flex flex-column justify-content-around">
-                <li>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-telephone-fill" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                      d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
-                  </svg>
-                  : 091 365 0449
-                </li>
-                <li>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-envelope-fill" viewBox="0 0 16 16">
-                    <path
-                      d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
-                  </svg>
-                  : kristijanhasnek3@gmail.com
-                </li>
-                <li>
-                  <a href="https://hr.linkedin.com/in/kristijan-hasnek-b68814218" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                      class="bi bi-linkedin" viewBox="0 0 16 16">
-                      <path
-                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
-                    </svg>
-                    : Kristijan Hasnek
-                  </a>
-                </li>
-                <li>
-                  <a href="https://github.com/hasnekk" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                      class="bi bi-github" viewBox="0 0 16 16">
-                      <path
-                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-                    </svg>
-                    : github
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="h-100 p-5 bg-body-tertiary border rounded-3">
-              <h2>My Location</h2>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55445.05039314649!2d16.16885517986171!3d45.89935212314121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476676e0016a9ea3%3A0x11030f0aaf4c9e0f!2sSoblinec!5e0!3m2!1shr!2shr!4v1695582251378!5m2!1shr!2shr"
-                width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-          </div>
-        </div>
+    <!-- PERSONAL PROJECTS -->
+    <section class="section shell" id="projects">
+      <div class="section-head reveal">
+        <span class="section-index">03</span>
+        <h2>Personal Projects</h2>
       </div>
-    </main>
-  </section>
+      <div class="cards" id="projects-list"></div>
+    </section>
 
+    <!-- OPEN SOURCE / COLLEGE -->
+    <section class="section shell" id="open-source">
+      <div class="section-head reveal">
+        <span class="section-index">04</span>
+        <h2>Academic &amp; Open Source</h2>
+      </div>
+      <p class="section-intro reveal">Repositories from coursework and self-study, with a focus on machine
+        learning.</p>
+      <ul class="list" id="opensource-list"></ul>
+    </section>
 
-  <!--BootStrap JS-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-    crossorigin="anonymous"></script>
+    <!-- EDUCATION -->
+    <section class="section shell" id="education">
+      <div class="section-head reveal">
+        <span class="section-index">05</span>
+        <h2>Education</h2>
+      </div>
+      <div class="edu-grid" id="education-list"></div>
+    </section>
 
-  <!--my js-->
+    <!-- COURSES -->
+    <section class="section shell" id="courses">
+      <div class="section-head reveal">
+        <span class="section-index">06</span>
+        <h2>Courses &amp; Certifications</h2>
+      </div>
+      <ul class="list courses" id="courses-list"></ul>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section shell" id="contact">
+      <div class="section-head reveal">
+        <span class="section-index">07</span>
+        <h2>Contact</h2>
+      </div>
+      <p class="section-intro reveal">Open to interesting full-stack and mobile work. The fastest way to reach me
+        is by email.</p>
+      <ul class="contact-list reveal" id="contact-list"></ul>
+    </section>
+  </main>
+
+  <footer class="site-footer shell">
+    <p>© <span id="year"></span> Kristijan Hasnek</p>
+    <a href="#top" class="to-top">Back to top ↑</a>
+  </footer>
+
+  <script src="./data.js"></script>
   <script src="./index.js"></script>
-
 </body>
 
 </html>
